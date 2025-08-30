@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>School Timetable</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 30px;
+        }
+        table {
+            width: 100%;
+            border-collapse: separate; /* to enable cellspacing */
+            border-spacing: 10px; /* cellspacing */
+            border: 3px solid #2980b9;
+            background-color: #fff;
+        }
+        caption {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #2980b9;
+        }
+        th, td {
+            border: 2px solid #2980b9;
+            padding: 12px 15px; /* cellpadding */
+            text-align: center;
+            vertical-align: middle;
+            background-color: #eaf2f8;
+        }
+        th {
+            background-color: #2980b9;
+            color: white;
+        }
+        /* Different background for break */
+        .break {
+            background-color: #f39c12;
+            color: white;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>collage Timetable</h1>
+
+    <table cellpadding="10" cellspacing="10" border="3">
+        <caption>Timetable for Information Technology</caption>
+        <tr>
+            <th>Time</th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+        </tr>
+        <tr>
+            <td>9:00 - 10:00</td>
+            <td>CN</td>
+            <td>communication skills</td>
+            <td>DWDM</td>
+            <td>AT&CD</td>
+            <td>AOR</td>
+        </tr>
+        <tr>
+            <td>10:00 - 11:00</td>
+            <td rowspan="2">CN lab</td> <!-- Biology spans two hours -->
+            <td>AT&CD</td>
+            <td>AJ</td>
+            <td>AOR</td>
+            <td>DWDM</td>
+        </tr>
+        <tr>
+            <td>11:00 - 12:00</td>
+            <td>AT&CD</td>
+            <td>CN</td>
+            <td>Communication Skills</td>
+            <td>AJ</td>
+        </tr>
+        <tr>
+            <td class="break" colspan="6">Break Time</td> <!-- Break spans all columns -->
+        </tr>
+        <tr>
+            <td>1:00 - 2:30</td>
+            <td>CN</td>
+            <td>AJ</td>
+            <td>DWDM</td>
+            <td>AT&CD</td>
+            <td>AOR</td>
+        </tr>
+        <tr>
+            <td>2:30 - 3:30</td>
+            <td>AOR</td>
+            <td>AT&CD</td>
+            <td>CN</td>
+            <td rowspan="2">AJ lab</td> <!-- Chemistry spans two hours -->
+            <td>Communication Skills</td>
+        </tr>
+        <tr>
+            <td>3:30 - 4:30</td>
+            <td>DWDM</td>
+            <td>AOR</td>
+            <td>AT&CD</td>
+            <td>CN</td>
+        </tr>
+    </table>
+
+    <p>
+        <strong>Explanation:</strong><br/>
+        - The <code>&lt;caption&gt;</code> tag provides a caption for the table.<br/>
+        - <code>cellspacing</code> adds space between the cells.<br/>
+        - <code>cellpadding</code> adds space inside each cell.<br/>
+        - <code>border</code> sets the thickness of the table border.<br/>
+        - <code>rowspan</code> is used to merge cells vertically (e.g., Biology and Chemistry classes spanning two hours).<br/>
+        - <code>colspan</code> is used to merge cells horizontally (e.g., Break Time spanning all days).
+    </p>
+
+</body>
+</html>
