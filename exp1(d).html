@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Thumbnail Image Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fafafa;
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 30px;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+        }
+        .gallery a {
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+        .gallery a:hover {
+            border-color: #2980b9;
+            box-shadow: 0 6px 12px rgba(41, 128, 185, 0.4);
+        }
+        .gallery img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            display: block;
+        }
+        /* Optional: caption below thumbnails */
+        .caption {
+            text-align: center;
+            margin-top: 5px;
+            font-size: 0.9rem;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Thumbnail Image Gallery</h1>
+
+    <div class="gallery">
+        <a href="https://picsum.photos/id/1018/600/400" target="_blank" rel="noopener noreferrer" title="Mountain View">
+            <img src="https://picsum.photos/id/1018/100/100" alt="Mountain View" />
+        </a>
+        <a href="https://picsum.photos/id/1025/600/400" target="_blank" rel="noopener noreferrer" title="Cute Dog">
+            <img src="https://picsum.photos/id/1025/100/100" alt="Cute Dog" />
+        </a>
+        <a href="https://picsum.photos/id/1015/600/400" target="_blank" rel="noopener noreferrer" title="Beach Sunset">
+            <img src="https://picsum.photos/id/1015/100/100" alt="Beach Sunset" />
+        </a>
+        <a href="https://picsum.photos/id/1003/600/400" target="_blank" rel="noopener noreferrer" title="Forest Path">
+            <img src="https://picsum.photos/id/1003/100/100" alt="Forest Path" />
+        </a>
+        <a href="https://picsum.photos/id/1035/600/400" target="_blank" rel="noopener noreferrer" title="City Skyline">
+            <img src="https://picsum.photos/id/1035/100/100" alt="City Skyline" />
+        </a>
+        <a href="https://picsum.photos/id/1043/600/400" target="_blank" rel="noopener noreferrer" title="Snowy Mountain">
+            <img src="https://picsum.photos/id/1043/100/100" alt="Snowy Mountain" />
+        </a>
+    </div>
+
+</body>
+</html>
