@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Working of Hyperlinks in HTML</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+            line-height: 1.6;
+            background-color: #f4f4f9;
+            color: #333;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 20px;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        a {
+            color: #2980b9;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        code {
+            background-color: #eaeaea;
+            padding: 2px 5px;
+            border-radius: 3px;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Working of Hyperlinks in HTML</h1>
+
+    <p>The <code>&lt;a&gt;</code> tag defines a hyperlink in HTML. It uses the <code>href</code> attribute to specify the URL of the page the link goes to.</p>
+
+    <h2>1. Basic Hyperlink</h2>
+    <p>
+        Click here to visit
+        <a href="https://www.example.com" target="_self">Example.com</a>.
+        This link opens in the same tab/window.
+    </p>
+
+    <h2>2. Open Link in New Tab</h2>
+    <p>
+        Click here to visit
+        <a href="https://www.example.com" target="_blank" rel="noopener noreferrer">Example.com</a>.
+        This link opens in a new tab/window.
+    </p>
+
+    <h2>3. Link to a Section on the Same Page</h2>
+    <p>
+        Jump to the <a href="#section2">Second Section</a> on this page.
+    </p>
+
+    <h2>4. Target Attribute Summary</h2>
+    <ul>
+        <li><code>_self</code>: Opens link in the current tab/window (default).</li>
+        <li><code>_blank</code>: Opens link in a new tab/window.</li>
+        <li><code>_parent</code>: Opens link in the parent frame.</li>
+        <li><code>_top</code>: Opens link in the full body of the window.</li>
+    </ul>
+
+    <h2 id="section2">Second Section</h2>
+    <p>This is the target section for the internal hyperlink.</p>
+
+</body>
+</html>
