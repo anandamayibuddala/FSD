@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Selector Examples</title>
+  <style>
+    /* ----------------------------
+       i. SIMPLE SELECTORS
+    ----------------------------- */
+    /* Element selector */
+    h1 {
+      color: darkblue;
+      text-align: center;
+    }
+
+    /* ID selector */
+    #unique {
+      color: crimson;
+      font-weight: bold;
+    }
+
+    /* Class selector */
+    .highlight {
+      background-color: yellow;
+      padding: 3px;
+    }
+
+    /* Group selector */
+    h2, p {
+      font-family: Arial, sans-serif;
+    }
+
+    /* Universal selector */
+    * {
+      margin: 5px;
+    }
+
+    /* ----------------------------
+       ii. COMBINATOR SELECTORS
+    ----------------------------- */
+    /* Descendant selector */
+    div p {
+      color: green;
+    }
+
+    /* Child selector (>) */
+    div > span {
+      color: orange;
+      font-weight: bold;
+    }
+
+    /* Adjacent sibling selector (+) */
+    h2 + p {
+      color: purple;
+    }
+
+    /* General sibling selector (~) */
+    h2 ~ p {
+      font-style: italic;
+    }
+
+    /* ----------------------------
+       iii. PSEUDO-CLASS SELECTORS
+    ----------------------------- */
+    a:hover {
+      color: red;
+      text-decoration: underline;
+    }
+    input:focus {
+      border: 2px solid blue;
+    }
+    li:first-child {
+      color: teal;
+    }
+    li:last-child {
+      color: brown;
+    }
+
+    /* ----------------------------
+       iv. PSEUDO-ELEMENT SELECTORS
+    ----------------------------- */
+    p::first-letter {
+      font-size: 24px;
+      font-weight: bold;
+      color: darkred;
+    }
+    p::first-line {
+      background-color: #f0e68c;
+    }
+    ::selection {
+      background-color: lightblue;
+      color: black;
+    }
+
+    /* ----------------------------
+       v. ATTRIBUTE SELECTORS
+    ----------------------------- */
+    input[type="text"] {
+      border: 1px solid gray;
+      padding: 5px;
+    }
+    input[type="email"] {
+      border: 1px solid green;
+    }
+    a[target="_blank"] {
+      color: darkorange;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>CSS Selectors Demonstration</h1>
+
+  <h2 id="unique">Simple Selectors</h2>
+  <p class="highlight">This paragraph uses a <strong>class selector</strong>.</p>
+  <p>Grouped with <code>h2</code> selector.</p>
+
+  <div>
+    <p>Descendant selector applied (div p).</p>
+    <span>Child selector applied (div > span).</span>
+  </div>
+
+  <h2>Combinator Selectors</h2>
+  <p>Adjacent sibling of h2 (h2 + p).</p>
+  <p>General sibling of h2 (h2 ~ p).</p>
+
+  <h2>Pseudo-class Selectors</h2>
+  <ul>
+    <li>First item</li>
+    <li>Middle item</li>
+    <li>Last item</li>
+  </ul>
+  <p><a href="#" target="_blank">Hover over this link</a></p>
+  <input type="text" placeholder="Focus on me">
+  <input type="email" placeholder="Enter email">
+
+  <h2>Pseudo-element Selectors</h2>
+  <p>This is a paragraph demonstrating <em>pseudo-elements</em>. The first letter is styled differently, and the first line has a background color.</p>
+  <p>Select this text with your mouse to see the selection color change.</p>
+
+</body>
+</html>
