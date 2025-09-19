@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Embed Audio and Video Example</title>
+</head>
+<body>
+
+  <h1>Embedding Audio and Video in HTML</h1>
+
+  <!-- Audio Section -->
+  <section>
+    <h2>Audio Example</h2>
+    <p>Below is an audio file embedded using the <code>&lt;audio&gt;</code> tag:</p>
+    <audio controls>
+      <source src="sample-audio.mp3" type="audio/mpeg">
+      <source src="sample-audio.ogg" type="audio/ogg">
+      Your browser does not support the audio element.
+    </audio>
+  </section>
+
+  <!-- Video Section -->
+  <section>
+    <h2>Video Example</h2>
+    <p>Below is a video file embedded using the <code>&lt;video&gt;</code> tag:</p>
+    <video controls width="500" poster="thumbnail.jpg">
+      <source src="sample-video.mp4" type="video/mp4">
+      <source src="sample-video.webm" type="video/webm">
+      <source src="sample-video.ogg" type="video/ogg">
+      Your browser does not support the video element.
+    </video>
+  </section>
+
+</body>
+</html>
